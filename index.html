@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+    html{
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
+    .scale{
+      height: 120px;
+      width: 1000px;
+      position: absolute;
+      background-color: #f8f9fa;
+      transition: all 0.6s;
+      margin-left: 180px;
+      margin-top: 150px;
+      display: flex;
+      gap: 1px;
+
+        }
+      .scale div:first-child{
+        margin-left: 1px;
+      }
+    body{
+     position: relative;
+      height: 100vh;
+      background-color: #e599f7;
+    }
+   
+    
+  
+    .check-scale{
+      position: absolute;
+      margin-left: 180px;
+      height: 80px;
+      width: 10px;
+      background-color: #339af0;
+      margin-top: 68px;
+      z-index: 10;
+    }
+    .div-markup{
+      height: 20px;
+      width: 1px;
+      background-color: #555;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="check-scale"></div>
+  <div class="scale">
+   
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

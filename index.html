@@ -15,51 +15,110 @@
       font-size: 62.5%;
       box-sizing: border-box;
     }
+    body{ 
+      background-color: #e599f7;
+      height: 100vh;
+      width: 100vh;
+      
+    }
     .scale{
       height: 120px;
       width: 1000px;
-      position: absolute;
-      background-color: #f8f9fa;
-      transition: all 0.6s;
-      margin-left: 180px;
-      margin-top: 150px;
       display: flex;
       gap: 1px;
-
-        }
-      .scale div:first-child{
-        margin-left: 1px;
+      z-index: 9999;
+      
       }
-    body{
-     position: relative;
-      height: 100vh;
-      background-color: #e599f7;
+      .scale-container{
+        z-index: 20;
+        position: absolute;
+      background-color: #f8f9fa;
+      transition: all 0.5s;
+      background-color: aquamarine;
+     
+      
+      }
+
+      /* .scale:hover{
+        transform: scale(1,2); 
+      } */
+      
+    .scale .div-markup:nth-child(1){
+      margin-left: 1px;
     }
    
     
   
-    .check-scale{
-      position: absolute;
-      margin-left: 180px;
-      height: 80px;
-      width: 10px;
-      background-color: #339af0;
-      margin-top: 68px;
-      z-index: 10;
-    }
+ 
     .div-markup{
-      height: 20px;
+      height: 30px;
       width: 1px;
       background-color: #555;
+      cursor: pointer;
     }
+    .div-markUp-ten-px{
+      height: 50px;
+    }
+  
+  
+    .showPixel{
+      height: 25px;
+      width: 80px;
+      background-color: rgba(180, 176, 171, 0.168);
+      color: #555;
+      display: flex;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .arrow-key-container{
+   
+      margin-left:150px;
+      display: flex;
+      gap: 10px;
+    }
+    /* .check-scale{
+      position: absolute;
+      width: 500px;
+      height: 200px;
+      background-color: aqua;
+      margin-left: 300px;
+     transition: all 0.6s;
+    
+    } */
+    .left-arrow,
+    .up-arrow,
+    .right-arrow,
+    .down-arrow{
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      background-color: #32f3f3be;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    
 
   </style>
 </head>
 <body>
-  <div class="check-scale"></div>
-  <div class="scale">
-   
+  <div class="check-scale" aria-label="this is blue in color" ></div>
+  <div class="scale-container">
+    <div  class="scale"></div>
+  <div class="showPixel"><span class="pixelData">0</span><span>px</span></div>
+  <div class="arrow-key-container">
+    <div class="left-arrow"><span>&larr;</span></div>
+    <div class="up-arrow"><span>&uarr;</span></div>
+    <div class="right-arrow"><span>&rarr;</span></div>
+    <div class="down-arrow"><span>&darr;</span></div>
+
   </div>
+  </div>
+  
+   
+ 
   <script src="./script.js"></script>
 </body>
 </html>

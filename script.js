@@ -67,66 +67,67 @@ for(let i=0;i<scalePixel.length;i++){
 //     });
 // }
 let moveValueInPixel=1;
-document.addEventListener("keydown",function(e){
-  if(e.key==="Enter"){
+pixelOk.addEventListener("click",function(e){
+  
     if(movingPixel.value){
       moveValueInPixel=parseInt(movingPixel.value);
       moveByPixelValue.textContent=parseInt(movingPixel.value);
       console.log(moveValueInPixel);
     }
-  }
+  
 })
+
+let f=function(){
+  
+  scaleContainer.style.left=`${event.pageX}px`;
+  scaleContainer.style.top=`${event.pageY}px`;
+}
 
 document.addEventListener("keydown",function(e){
   if(e.key==="m"){
     onOffBtn.style.backgroundColor="#19ed19c5"
     onOffBtn.textContent="on";
-    document.addEventListener("click",function(e){
-      scaleContainer.style.left=`${e.pageX}px`;
-       scaleContainer.style.top=`${e.pageY}px`;
-     
-   });
+    document.addEventListener("click",f);
    
   }else if(e.key==="n"){
     console.log("hello world why this not working");
     onOffBtn.style.backgroundColor="red";
     onOffBtn.textContent="off";
-    
+    document.removeEventListener("click",f);
   }
 })
 console.log(onOffBtn.textContent);
 const moveScaleWithButton=function(){
-  document.addEventListener("keydown",function(e){
-    if(e.key==="ArrowLeft"){
+  leftBtn.addEventListener("click",function(e){
+      console.log("hello world");
       scaleContainer.style.left= `${parseInt(scaleContainer.style.left)-moveValueInPixel}px`;
       leftBtn.style.backgroundColor="#d0bfff";
-      document.addEventListener("keyup",function(e){
-        leftBtn.style.backgroundColor="#32f3f3be"
-      })
-    }else if(e.key==="ArrowRight"){
-      scaleContainer.style.left= `${parseInt(scaleContainer.style.left)+moveValueInPixel}px`;
-      righttBtn.style.backgroundColor="#d0bfff";
-      document.addEventListener("keyup",function(e){
-        righttBtn.style.backgroundColor="#32f3f3be"
-     
+  });
+      righttBtn.addEventListener("click",function(e){
 
-      })
-    }else if(e.key==="ArrowUp"){
-      scaleContainer.style.top= `${parseInt(scaleContainer.style.top)-moveValueInPixel}px`;
-      upBtn.style.backgroundColor="#d0bfff";
-      document.addEventListener("keyup",function(e){
-        upBtn.style.backgroundColor="#32f3f3be"
-      })
-    }else if(e.key==="ArrowDown"){
-      scaleContainer.style.top= `${parseInt(scaleContainer.style.top)+moveValueInPixel}px`;
-      downBtn.style.backgroundColor="#d0bfff";
-      document.addEventListener("keyup",function(e){
-        downBtn.style.backgroundColor="#32f3f3be"
+        scaleContainer.style.left= `${parseInt(scaleContainer.style.left)+moveValueInPixel}px`;
+        righttBtn.style.backgroundColor="#d0bfff";
+
+      });
+  
+
+      upBtn.addEventListener("click",function(e){
+        scaleContainer.style.top= `${parseInt(scaleContainer.style.top)-moveValueInPixel}px`;
+        upBtn.style.backgroundColor="#d0bfff";
       })
       
-    }
-  })
+     
+    downBtn.addEventListener("click",function(e){
+
+      scaleContainer.style.top= `${parseInt(scaleContainer.style.top)+moveValueInPixel}px`;
+      downBtn.style.backgroundColor="#d0bfff";
+    });
+    
+    
+  
 }
+
+
 
 
 document.addEventListener("keypress",function(e){
@@ -150,13 +151,5 @@ document.addEventListener("keypress",function(e){
 
 
 
+
 moveScaleWithButton();
-
-if(onOffBtn.textContent==="off"){
-
-document.removeEventListener("click",function(e){
-  scaleContainer.style.left=`${e.pageX}px`;
-  scaleContainer.style.top=`${e.pageY}px`;
-})
-
-}

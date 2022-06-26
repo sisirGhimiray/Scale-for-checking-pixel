@@ -38,3 +38,5 @@ document.addEventListener("click",function(e){
   move_scale_container.style.top=`${e.pageY}px`
   console.log(e.pageY);
 })
+
+move_scale_container.style.transform=`rotate(90deg)`;

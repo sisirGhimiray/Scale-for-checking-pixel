@@ -20,15 +20,15 @@
       overflow: scroll;
       
     }
-    .move-scale-container{
-      width: 500px;
-      height: 100px;
+    /* .move-scale-container{
+      width: 100px;
+      height: 500px;
       position: absolute;
       transition: all 0.4s;
-      top: 0px;
-    }
+      background-color: #e599f7;
+    } */
   
-      .scale-container{
+      /* .scale-container{
         z-index: 20;
         position: relative;
       background-color: #f8f9fa;
@@ -37,34 +37,34 @@
       width: 500px;
       height: 100px;
       
-      }
+      } */
     
-      .scale{
+      /* .scale{
         position: absolute;
       height: 100px;
       
       display: flex;
       gap: 1px;
       z-index: 9999;
-   
+      
       top: 0;
       left: 0;
   
       
-      }
+      } */
 
       /* .scale:hover{
         transform: scale(1,2); 
       } */
       
-    .scale .div-markup:nth-child(1){
+    /* .scale .div-markup:nth-child(1){
       margin-left: 1px;
     }
-   
+    */
     
   
  
-    .div-markup{
+    /* .div-markup{
       height: 30px;
       width: 1px;
       background-color: #555;
@@ -72,10 +72,10 @@
     }
     .div-markUp-ten-px{
       height: 50px;
-    }
+    } */
   
   
-    .showPixel{
+    /* .showPixel{
       position: absolute;
       left: 0;
       bottom: 0;
@@ -87,16 +87,16 @@
       justify-content: center;
       font-size: 22px;
       transition: all 0.8s;
-    }
-    .arrow-key-container{
+    } */
+    /* .arrow-key-container{
      position: absolute;
       display: flex;
       gap: 10px;
       right: 0;
       bottom: 0;
-    }
+    } */
     
-    .left-arrow,
+    /* .left-arrow,
     .up-arrow,
     .right-arrow,
     .down-arrow{
@@ -109,8 +109,8 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-    }
-    .on-off-btn{
+    } */
+    /* .on-off-btn{
       position: absolute;
       right: 0;
       bottom: 0;
@@ -123,9 +123,9 @@
       font-size: large;
       padding: 8px 16px;
       cursor: pointer;
-    }
+    } */
 
-    .vertical-scale{
+    /* .vertical-scale{
       position: absolute;
       width: 100px;
       display: flex;
@@ -137,20 +137,83 @@
     }
     .vertical-scale .div-markup:nth-child(1){
       margin-left: 1px;
-    }
-    .hr-vt{
+    } */
+    /* .hr-vt{
       position: absolute;
       display: flex;
       gap: 1px;
      
       bottom: 0;
       left: 0;
+    } */
+
+    .scale-vr-hr-tr{
+      height: 100vh;
+      max-width: 100%;
+      background-color: #f8f9fa;
+    }
+    .scale--2{
+      height: 100px;
+      width: 500px;
+      background-color: rgba(0, 0, 0, 0.168);
+      position: absolute;
+      transition: all 0.3s;
+      /* transform: scaleY(1); */
+    }
+    .transform-h-w{
+      height: 500px;
+      width: 100px;
+    }
+
+    .scale--2 .rotation-scale{
+      display: flex;
+      gap: 1px;
+    
+    }
+    
+
+    .scale--2 .rotation-scale .scale2--pixel{
+      width: 1px;
+      height: 50px;
+      background-color: black;
+      
+      z-index: 9999;
+      /* transform: rotate(-90deg); */
+    }
+    .scale--2 .rotation-scale .scale2--pixel:first-child{
+      margin-left: 1px;
+    }
+  
+
+    .pixle-value-closest-div{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .pixel-value{
+      font-size: 18px;
+      font-weight: 300;
+      font-family: sans-serif;
     }
 
   </style>
 </head>
 <body>
-  <div class="move-scale-container">
+
+  <section class="scale-vr-hr-tr">
+
+<div class="scale--2">
+  <main class="rotation-scale">
+<div class="scale2--pixel" data-pix="1"></div><div class="scale2--pixel" data-pix="2"></div><div class="scale2--pixel" data-pix="3"></div><div class="scale2--pixel" data-pix="4"></div><div class="scale2--pixel" data-pix="5"></div><div class="scale2--pixel" data-pix="6"></div><div class="scale2--pixel" data-pix="7"></div><div class="scale2--pixel" data-pix="8"></div><div class="scale2--pixel" data-pix="9"></div><div class="scale2--pixel" data-pix="10"></div><div class="scale2--pixel" data-pix="11"></div><div class="scale2--pixel" data-pix="12"></div><div class="scale2--pixel" data-pix="13"></div><div class="scale2--pixel" data-pix="14"></div><div class="scale2--pixel" data-pix="15"></div><div class="scale2--pixel" data-pix="16"></div><div class="scale2--pixel" data-pix="17"></div><div class="scale2--pixel" data-pix="18"></div><div class="scale2--pixel" data-pix="19"></div><div class="scale2--pixel" data-pix="20"></div><div class="scale2--pixel" data-pix="21"></div><div class="scale2--pixel" data-pix="22"></div><div class="scale2--pixel" data-pix="23"></div><div class="scale2--pixel" data-pix="24"></div><div class="scale2--pixel" data-pix="25"></div><div class="scale2--pixel" data-pix="26"></div><div class="scale2--pixel" data-pix="27"></div><div class="scale2--pixel" data-pix="28"></div><div class="scale2--pixel" data-pix="29"></div><div class="scale2--pixel" data-pix="30"></div><div class="scale2--pixel" data-pix="31"></div><div class="scale2--pixel" data-pix="32"></div><div class="scale2--pixel" data-pix="33"></div><div class="scale2--pixel" data-pix="34"></div><div class="scale2--pixel" data-pix="35"></div><div class="scale2--pixel" data-pix="36"></div><div class="scale2--pixel" data-pix="37"></div><div class="scale2--pixel" data-pix="38"></div><div class="scale2--pixel" data-pix="39"></div><div class="scale2--pixel" data-pix="40"></div><div class="scale2--pixel" data-pix="41"></div><div class="scale2--pixel" data-pix="42"></div><div class="scale2--pixel" data-pix="43"></div><div class="scale2--pixel" data-pix="44"></div><div class="scale2--pixel" data-pix="45"></div><div class="scale2--pixel" data-pix="46"></div><div class="scale2--pixel" data-pix="47"></div><div class="scale2--pixel" data-pix="48"></div><div class="scale2--pixel" data-pix="49"></div><div class="scale2--pixel" data-pix="50"></div><div class="scale2--pixel" data-pix="51"></div><div class="scale2--pixel" data-pix="52"></div><div class="scale2--pixel" data-pix="53"></div><div class="scale2--pixel" data-pix="54"></div><div class="scale2--pixel" data-pix="55"></div><div class="scale2--pixel" data-pix="56"></div><div class="scale2--pixel" data-pix="57"></div><div class="scale2--pixel" data-pix="58"></div><div class="scale2--pixel" data-pix="59"></div><div class="scale2--pixel" data-pix="60"></div><div class="scale2--pixel" data-pix="61"></div><div class="scale2--pixel" data-pix="62"></div><div class="scale2--pixel" data-pix="63"></div><div class="scale2--pixel" data-pix="64"></div><div class="scale2--pixel" data-pix="65"></div><div class="scale2--pixel" data-pix="66"></div><div class="scale2--pixel" data-pix="67"></div><div class="scale2--pixel" data-pix="68"></div><div class="scale2--pixel" data-pix="69"></div><div class="scale2--pixel" data-pix="70"></div><div class="scale2--pixel" data-pix="71"></div><div class="scale2--pixel" data-pix="72"></div><div class="scale2--pixel" data-pix="73"></div><div class="scale2--pixel" data-pix="74"></div><div class="scale2--pixel" data-pix="75"></div><div class="scale2--pixel" data-pix="76"></div><div class="scale2--pixel" data-pix="77"></div><div class="scale2--pixel" data-pix="78"></div><div class="scale2--pixel" data-pix="79"></div><div class="scale2--pixel" data-pix="80"></div><div class="scale2--pixel" data-pix="81"></div><div class="scale2--pixel" data-pix="82"></div><div class="scale2--pixel" data-pix="83"></div><div class="scale2--pixel" data-pix="84"></div><div class="scale2--pixel" data-pix="85"></div><div class="scale2--pixel" data-pix="86"></div><div class="scale2--pixel" data-pix="87"></div><div class="scale2--pixel" data-pix="88"></div><div class="scale2--pixel" data-pix="89"></div><div class="scale2--pixel" data-pix="90"></div><div class="scale2--pixel" data-pix="91"></div><div class="scale2--pixel" data-pix="92"></div><div class="scale2--pixel" data-pix="93"></div><div class="scale2--pixel" data-pix="94"></div><div class="scale2--pixel" data-pix="95"></div><div class="scale2--pixel" data-pix="96"></div><div class="scale2--pixel" data-pix="97"></div><div class="scale2--pixel" data-pix="98"></div><div class="scale2--pixel" data-pix="99"></div><div class="scale2--pixel" data-pix="100"></div><div class="scale2--pixel" data-pix="101"></div><div class="scale2--pixel" data-pix="102"></div><div class="scale2--pixel" data-pix="103"></div><div class="scale2--pixel" data-pix="104"></div><div class="scale2--pixel" data-pix="105"></div><div class="scale2--pixel" data-pix="106"></div><div class="scale2--pixel" data-pix="107"></div><div class="scale2--pixel" data-pix="108"></div><div class="scale2--pixel" data-pix="109"></div><div class="scale2--pixel" data-pix="110"></div><div class="scale2--pixel" data-pix="111"></div><div class="scale2--pixel" data-pix="112"></div><div class="scale2--pixel" data-pix="113"></div><div class="scale2--pixel" data-pix="114"></div><div class="scale2--pixel" data-pix="115"></div><div class="scale2--pixel" data-pix="116"></div><div class="scale2--pixel" data-pix="117"></div><div class="scale2--pixel" data-pix="118"></div><div class="scale2--pixel" data-pix="119"></div><div class="scale2--pixel" data-pix="120"></div><div class="scale2--pixel" data-pix="121"></div><div class="scale2--pixel" data-pix="122"></div><div class="scale2--pixel" data-pix="123"></div><div class="scale2--pixel" data-pix="124"></div><div class="scale2--pixel" data-pix="125"></div><div class="scale2--pixel" data-pix="126"></div><div class="scale2--pixel" data-pix="127"></div><div class="scale2--pixel" data-pix="128"></div><div class="scale2--pixel" data-pix="129"></div><div class="scale2--pixel" data-pix="130"></div><div class="scale2--pixel" data-pix="131"></div><div class="scale2--pixel" data-pix="132"></div><div class="scale2--pixel" data-pix="133"></div><div class="scale2--pixel" data-pix="134"></div><div class="scale2--pixel" data-pix="135"></div><div class="scale2--pixel" data-pix="136"></div><div class="scale2--pixel" data-pix="137"></div><div class="scale2--pixel" data-pix="138"></div><div class="scale2--pixel" data-pix="139"></div><div class="scale2--pixel" data-pix="140"></div><div class="scale2--pixel" data-pix="141"></div><div class="scale2--pixel" data-pix="142"></div><div class="scale2--pixel" data-pix="143"></div><div class="scale2--pixel" data-pix="144"></div><div class="scale2--pixel" data-pix="145"></div><div class="scale2--pixel" data-pix="146"></div><div class="scale2--pixel" data-pix="147"></div><div class="scale2--pixel" data-pix="148"></div><div class="scale2--pixel" data-pix="149"></div><div class="scale2--pixel" data-pix="150"></div><div class="scale2--pixel" data-pix="151"></div><div class="scale2--pixel" data-pix="152"></div><div class="scale2--pixel" data-pix="153"></div><div class="scale2--pixel" data-pix="154"></div><div class="scale2--pixel" data-pix="155"></div><div class="scale2--pixel" data-pix="156"></div><div class="scale2--pixel" data-pix="157"></div><div class="scale2--pixel" data-pix="158"></div><div class="scale2--pixel" data-pix="159"></div><div class="scale2--pixel" data-pix="160"></div><div class="scale2--pixel" data-pix="161"></div><div class="scale2--pixel" data-pix="162"></div><div class="scale2--pixel" data-pix="163"></div><div class="scale2--pixel" data-pix="164"></div><div class="scale2--pixel" data-pix="165"></div><div class="scale2--pixel" data-pix="166"></div><div class="scale2--pixel" data-pix="167"></div><div class="scale2--pixel" data-pix="168"></div><div class="scale2--pixel" data-pix="169"></div><div class="scale2--pixel" data-pix="170"></div><div class="scale2--pixel" data-pix="171"></div><div class="scale2--pixel" data-pix="172"></div><div class="scale2--pixel" data-pix="173"></div><div class="scale2--pixel" data-pix="174"></div><div class="scale2--pixel" data-pix="175"></div><div class="scale2--pixel" data-pix="176"></div><div class="scale2--pixel" data-pix="177"></div><div class="scale2--pixel" data-pix="178"></div><div class="scale2--pixel" data-pix="179"></div><div class="scale2--pixel" data-pix="180"></div><div class="scale2--pixel" data-pix="181"></div><div class="scale2--pixel" data-pix="182"></div><div class="scale2--pixel" data-pix="183"></div><div class="scale2--pixel" data-pix="184"></div><div class="scale2--pixel" data-pix="185"></div><div class="scale2--pixel" data-pix="186"></div><div class="scale2--pixel" data-pix="187"></div><div class="scale2--pixel" data-pix="188"></div><div class="scale2--pixel" data-pix="189"></div><div class="scale2--pixel" data-pix="190"></div><div class="scale2--pixel" data-pix="191"></div><div class="scale2--pixel" data-pix="192"></div><div class="scale2--pixel" data-pix="193"></div><div class="scale2--pixel" data-pix="194"></div><div class="scale2--pixel" data-pix="195"></div><div class="scale2--pixel" data-pix="196"></div><div class="scale2--pixel" data-pix="197"></div><div class="scale2--pixel" data-pix="198"></div><div class="scale2--pixel" data-pix="199"></div><div class="scale2--pixel" data-pix="200"></div><div class="scale2--pixel" data-pix="201"></div><div class="scale2--pixel" data-pix="202"></div><div class="scale2--pixel" data-pix="203"></div><div class="scale2--pixel" data-pix="204"></div><div class="scale2--pixel" data-pix="205"></div><div class="scale2--pixel" data-pix="206"></div><div class="scale2--pixel" data-pix="207"></div><div class="scale2--pixel" data-pix="208"></div><div class="scale2--pixel" data-pix="209"></div><div class="scale2--pixel" data-pix="210"></div><div class="scale2--pixel" data-pix="211"></div><div class="scale2--pixel" data-pix="212"></div><div class="scale2--pixel" data-pix="213"></div><div class="scale2--pixel" data-pix="214"></div><div class="scale2--pixel" data-pix="215"></div><div class="scale2--pixel" data-pix="216"></div><div class="scale2--pixel" data-pix="217"></div><div class="scale2--pixel" data-pix="218"></div><div class="scale2--pixel" data-pix="219"></div><div class="scale2--pixel" data-pix="220"></div><div class="scale2--pixel" data-pix="221"></div><div class="scale2--pixel" data-pix="222"></div><div class="scale2--pixel" data-pix="223"></div><div class="scale2--pixel" data-pix="224"></div><div class="scale2--pixel" data-pix="225"></div><div class="scale2--pixel" data-pix="226"></div><div class="scale2--pixel" data-pix="227"></div><div class="scale2--pixel" data-pix="228"></div><div class="scale2--pixel" data-pix="229"></div><div class="scale2--pixel" data-pix="230"></div><div class="scale2--pixel" data-pix="231"></div><div class="scale2--pixel" data-pix="232"></div><div class="scale2--pixel" data-pix="233"></div><div class="scale2--pixel" data-pix="234"></div><div class="scale2--pixel" data-pix="235"></div><div class="scale2--pixel" data-pix="236"></div><div class="scale2--pixel" data-pix="237"></div><div class="scale2--pixel" data-pix="238"></div><div class="scale2--pixel" data-pix="239"></div><div class="scale2--pixel" data-pix="240"></div><div class="scale2--pixel" data-pix="241"></div><div class="scale2--pixel" data-pix="242"></div><div class="scale2--pixel" data-pix="243"></div><div class="scale2--pixel" data-pix="244"></div><div class="scale2--pixel" data-pix="245"></div><div class="scale2--pixel" data-pix="246"></div><div class="scale2--pixel" data-pix="247"></div><div class="scale2--pixel" data-pix="248"></div><div class="scale2--pixel" data-pix="249"></div><div class="scale2--pixel" data-pix="250"></div>
+  </main>
+
+<div ><span class="pixel-value">0</span>px</div>
+
+
+</div>
+
+  </section>
+  <!-- <div class="move-scale-container">
   <div class="scale-container">
     <div class="scale">
       <div class="div-markup" data-pixel-num="1"></div><div class="div-markup" data-pixel-num="2"></div><div class="div-markup" data-pixel-num="3"></div><div class="div-markup" data-pixel-num="4"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="5"></div><div class="div-markup" data-pixel-num="6"></div><div class="div-markup" data-pixel-num="7"></div><div class="div-markup" data-pixel-num="8"></div><div class="div-markup" data-pixel-num="9"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="10"></div><div class="div-markup" data-pixel-num="11"></div><div class="div-markup" data-pixel-num="12"></div><div class="div-markup" data-pixel-num="13"></div><div class="div-markup" data-pixel-num="14"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="15"></div><div class="div-markup" data-pixel-num="16"></div><div class="div-markup" data-pixel-num="17"></div><div class="div-markup" data-pixel-num="18"></div><div class="div-markup" data-pixel-num="19"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="20"></div><div class="div-markup" data-pixel-num="21"></div><div class="div-markup" data-pixel-num="22"></div><div class="div-markup" data-pixel-num="23"></div><div class="div-markup" data-pixel-num="24"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="25"></div><div class="div-markup" data-pixel-num="26"></div><div class="div-markup" data-pixel-num="27"></div><div class="div-markup" data-pixel-num="28"></div><div class="div-markup" data-pixel-num="29"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="30"></div><div class="div-markup" data-pixel-num="31"></div><div class="div-markup" data-pixel-num="32"></div><div class="div-markup" data-pixel-num="33"></div><div class="div-markup" data-pixel-num="34"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="35"></div><div class="div-markup" data-pixel-num="36"></div><div class="div-markup" data-pixel-num="37"></div><div class="div-markup" data-pixel-num="38"></div><div class="div-markup" data-pixel-num="39"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="40"></div><div class="div-markup" data-pixel-num="41"></div><div class="div-markup" data-pixel-num="42"></div><div class="div-markup" data-pixel-num="43"></div><div class="div-markup" data-pixel-num="44"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="45"></div><div class="div-markup" data-pixel-num="46"></div><div class="div-markup" data-pixel-num="47"></div><div class="div-markup" data-pixel-num="48"></div><div class="div-markup" data-pixel-num="49"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="50"></div><div class="div-markup" data-pixel-num="51"></div><div class="div-markup" data-pixel-num="52"></div><div class="div-markup" data-pixel-num="53"></div><div class="div-markup" data-pixel-num="54"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="55"></div><div class="div-markup" data-pixel-num="56"></div><div class="div-markup" data-pixel-num="57"></div><div class="div-markup" data-pixel-num="58"></div><div class="div-markup" data-pixel-num="59"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="60"></div><div class="div-markup" data-pixel-num="61"></div><div class="div-markup" data-pixel-num="62"></div><div class="div-markup" data-pixel-num="63"></div><div class="div-markup" data-pixel-num="64"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="65"></div><div class="div-markup" data-pixel-num="66"></div><div class="div-markup" data-pixel-num="67"></div><div class="div-markup" data-pixel-num="68"></div><div class="div-markup" data-pixel-num="69"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="70"></div><div class="div-markup" data-pixel-num="71"></div><div class="div-markup" data-pixel-num="72"></div><div class="div-markup" data-pixel-num="73"></div><div class="div-markup" data-pixel-num="74"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="75"></div><div class="div-markup" data-pixel-num="76"></div><div class="div-markup" data-pixel-num="77"></div><div class="div-markup" data-pixel-num="78"></div><div class="div-markup" data-pixel-num="79"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="80"></div><div class="div-markup" data-pixel-num="81"></div><div class="div-markup" data-pixel-num="82"></div><div class="div-markup" data-pixel-num="83"></div><div class="div-markup" data-pixel-num="84"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="85"></div><div class="div-markup" data-pixel-num="86"></div><div class="div-markup" data-pixel-num="87"></div><div class="div-markup" data-pixel-num="88"></div><div class="div-markup" data-pixel-num="89"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="90"></div><div class="div-markup" data-pixel-num="91"></div><div class="div-markup" data-pixel-num="92"></div><div class="div-markup" data-pixel-num="93"></div><div class="div-markup" data-pixel-num="94"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="95"></div><div class="div-markup" data-pixel-num="96"></div><div class="div-markup" data-pixel-num="97"></div><div class="div-markup" data-pixel-num="98"></div><div class="div-markup" data-pixel-num="99"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="100"></div><div class="div-markup" data-pixel-num="101"></div><div class="div-markup" data-pixel-num="102"></div><div class="div-markup" data-pixel-num="103"></div><div class="div-markup" data-pixel-num="104"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="105"></div><div class="div-markup" data-pixel-num="106"></div><div class="div-markup" data-pixel-num="107"></div><div class="div-markup" data-pixel-num="108"></div><div class="div-markup" data-pixel-num="109"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="110"></div><div class="div-markup" data-pixel-num="111"></div><div class="div-markup" data-pixel-num="112"></div><div class="div-markup" data-pixel-num="113"></div><div class="div-markup" data-pixel-num="114"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="115"></div><div class="div-markup" data-pixel-num="116"></div><div class="div-markup" data-pixel-num="117"></div><div class="div-markup" data-pixel-num="118"></div><div class="div-markup" data-pixel-num="119"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="120"></div><div class="div-markup" data-pixel-num="121"></div><div class="div-markup" data-pixel-num="122"></div><div class="div-markup" data-pixel-num="123"></div><div class="div-markup" data-pixel-num="124"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="125"></div><div class="div-markup" data-pixel-num="126"></div><div class="div-markup" data-pixel-num="127"></div><div class="div-markup" data-pixel-num="128"></div><div class="div-markup" data-pixel-num="129"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="130"></div><div class="div-markup" data-pixel-num="131"></div><div class="div-markup" data-pixel-num="132"></div><div class="div-markup" data-pixel-num="133"></div><div class="div-markup" data-pixel-num="134"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="135"></div><div class="div-markup" data-pixel-num="136"></div><div class="div-markup" data-pixel-num="137"></div><div class="div-markup" data-pixel-num="138"></div><div class="div-markup" data-pixel-num="139"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="140"></div><div class="div-markup" data-pixel-num="141"></div><div class="div-markup" data-pixel-num="142"></div><div class="div-markup" data-pixel-num="143"></div><div class="div-markup" data-pixel-num="144"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="145"></div><div class="div-markup" data-pixel-num="146"></div><div class="div-markup" data-pixel-num="147"></div><div class="div-markup" data-pixel-num="148"></div><div class="div-markup" data-pixel-num="149"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="150"></div><div class="div-markup" data-pixel-num="151"></div><div class="div-markup" data-pixel-num="152"></div><div class="div-markup" data-pixel-num="153"></div><div class="div-markup" data-pixel-num="154"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="155"></div><div class="div-markup" data-pixel-num="156"></div><div class="div-markup" data-pixel-num="157"></div><div class="div-markup" data-pixel-num="158"></div><div class="div-markup" data-pixel-num="159"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="160"></div><div class="div-markup" data-pixel-num="161"></div><div class="div-markup" data-pixel-num="162"></div><div class="div-markup" data-pixel-num="163"></div><div class="div-markup" data-pixel-num="164"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="165"></div><div class="div-markup" data-pixel-num="166"></div><div class="div-markup" data-pixel-num="167"></div><div class="div-markup" data-pixel-num="168"></div><div class="div-markup" data-pixel-num="169"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="170"></div><div class="div-markup" data-pixel-num="171"></div><div class="div-markup" data-pixel-num="172"></div><div class="div-markup" data-pixel-num="173"></div><div class="div-markup" data-pixel-num="174"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="175"></div><div class="div-markup" data-pixel-num="176"></div><div class="div-markup" data-pixel-num="177"></div><div class="div-markup" data-pixel-num="178"></div><div class="div-markup" data-pixel-num="179"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="180"></div><div class="div-markup" data-pixel-num="181"></div><div class="div-markup" data-pixel-num="182"></div><div class="div-markup" data-pixel-num="183"></div><div class="div-markup" data-pixel-num="184"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="185"></div><div class="div-markup" data-pixel-num="186"></div><div class="div-markup" data-pixel-num="187"></div><div class="div-markup" data-pixel-num="188"></div><div class="div-markup" data-pixel-num="189"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="190"></div><div class="div-markup" data-pixel-num="191"></div><div class="div-markup" data-pixel-num="192"></div><div class="div-markup" data-pixel-num="193"></div><div class="div-markup" data-pixel-num="194"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="195"></div><div class="div-markup" data-pixel-num="196"></div><div class="div-markup" data-pixel-num="197"></div><div class="div-markup" data-pixel-num="198"></div><div class="div-markup" data-pixel-num="199"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="200"></div><div class="div-markup" data-pixel-num="201"></div><div class="div-markup" data-pixel-num="202"></div><div class="div-markup" data-pixel-num="203"></div><div class="div-markup" data-pixel-num="204"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="205"></div><div class="div-markup" data-pixel-num="206"></div><div class="div-markup" data-pixel-num="207"></div><div class="div-markup" data-pixel-num="208"></div><div class="div-markup" data-pixel-num="209"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="210"></div><div class="div-markup" data-pixel-num="211"></div><div class="div-markup" data-pixel-num="212"></div><div class="div-markup" data-pixel-num="213"></div><div class="div-markup" data-pixel-num="214"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="215"></div><div class="div-markup" data-pixel-num="216"></div><div class="div-markup" data-pixel-num="217"></div><div class="div-markup" data-pixel-num="218"></div><div class="div-markup" data-pixel-num="219"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="220"></div><div class="div-markup" data-pixel-num="221"></div><div class="div-markup" data-pixel-num="222"></div><div class="div-markup" data-pixel-num="223"></div><div class="div-markup" data-pixel-num="224"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="225"></div><div class="div-markup" data-pixel-num="226"></div><div class="div-markup" data-pixel-num="227"></div><div class="div-markup" data-pixel-num="228"></div><div class="div-markup" data-pixel-num="229"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="230"></div><div class="div-markup" data-pixel-num="231"></div><div class="div-markup" data-pixel-num="232"></div><div class="div-markup" data-pixel-num="233"></div><div class="div-markup" data-pixel-num="234"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="235"></div><div class="div-markup" data-pixel-num="236"></div><div class="div-markup" data-pixel-num="237"></div><div class="div-markup" data-pixel-num="238"></div><div class="div-markup" data-pixel-num="239"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="240"></div><div class="div-markup" data-pixel-num="241"></div><div class="div-markup" data-pixel-num="242"></div><div class="div-markup" data-pixel-num="243"></div><div class="div-markup" data-pixel-num="244"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="245"></div><div class="div-markup" data-pixel-num="246"></div><div class="div-markup" data-pixel-num="247"></div><div class="div-markup" data-pixel-num="248"></div><div class="div-markup" data-pixel-num="249"></div><div class="div-markup div-markUp-ten-px" data-pixel-num="250"></div> 
@@ -160,8 +223,14 @@
      </div>
       <div class="hr-vt">H:<span class="horizontal-value">0</span>V:<span class="vertical-value">0</span></div>
   </div>
-</div>
-<img src="./Screenshot (212).png" alt="">
+</div> -->
+<img src="./Screenshot (218).png" alt="">
+<img src="./Screenshot (214).png" alt="">
+<img src="./Screenshot (215).png" alt="">
+<img src="./Screenshot (216).png" alt="">
+
+
+
   <script src="./script.js"></script>
 </body>
 </html>

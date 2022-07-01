@@ -49,8 +49,12 @@ const changeScale_hr_vr=function(){
       for(let p of scaleTwo.querySelector(".rotation-scale").querySelectorAll(".scale2--pixel") ){
         p.style.width=`${50}px`;
         p.style.height=`${1}px`;
+        
         document.querySelector(".pixel-value").closest("div").setAttribute("class","pixle-value-closest-div");
       }
+      scaleTwo.classList.remove("horizontal-part");
+      scaleTwo.classList.add("vertical-part");
+      
       rotation_scale.style.flexDirection="column";
     }else{
       for(let p of scaleTwo.querySelector(".rotation-scale").querySelectorAll(".scale2--pixel") ){
